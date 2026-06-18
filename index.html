@@ -738,43 +738,51 @@ footer { background: var(--surface); border-top: 1px solid var(--border); paddin
       </div>
 
       <!-- Right: Gmail Form -->
-      <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-  <div class="form-row">
-    <div class="form-group">
-      <label for="f-name">Your Name</label>
-      <input type="text" id="f-name" name="name" placeholder="Riya Sharma" required/>
+<div class="gmail-form-card">
+  <h3>Send Me a Message</h3>
+  <p>Fill in the form — we connect soon.</p>
+
+  <form id="contactForm" action="https://formspree.io/f/mgvzykwj" method="POST">
+    <div class="form-row">
+      <div class="form-group">
+        <label for="f-name">Your Name</label>
+        <input type="text" id="f-name" name="name" placeholder="Riya Sharma" required/>
+      </div>
+      <div class="form-group">
+        <label for="f-email">Your Email</label>
+        <input type="email" id="f-email" name="email" placeholder="riya@company.com" required/>
+      </div>
     </div>
+
     <div class="form-group">
-      <label for="f-email">Your Email</label>
-      <input type="email" id="f-email" name="email" placeholder="riya@company.com" required/>
+      <label for="f-purpose">Purpose</label>
+      <select id="f-purpose" name="purpose">
+        <option value="Job Opportunity">💼 Job Opportunity</option>
+        <option value="Internship Offer">🎓 Internship Offer</option>
+        <option value="Freelance Project">🔧 Freelance Project</option>
+        <option value="Collaboration">🤝 Collaboration / Collab</option>
+        <option value="General Inquiry">💬 General Inquiry</option>
+      </select>
     </div>
-  </div>
-  <div class="form-group">
-    <label for="f-purpose">Purpose</label>
-    <select id="f-purpose" name="purpose">
-      <option value="Job Opportunity">💼 Job Opportunity</option>
-      <option value="Internship Offer">🎓 Internship Offer</option>
-      <option value="Freelance Project">🔧 Freelance Project</option>
-      <option value="Collaboration">🤝 Collaboration / Collab</option>
-      <option value="General Inquiry">💬 General Inquiry</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="f-subject">Subject</label>
-    <input type="text" id="f-subject" name="subject" placeholder="Internship at XYZ Corp — Summer 2026" required/>
-  </div>
-  <div class="form-group">
-    <label for="f-msg">Message</label>
-    <textarea id="f-msg" name="message" placeholder="Hi Digambar, I came across your portfolio and would love to discuss..." required></textarea>
-  </div>
-  <!-- Honeypot field to reduce spam (Formspree convention) -->
-  <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off"/>
-  <button class="form-send-btn" id="formSendBtn" type="submit">
-    <span id="btnIcon">✉️</span> <span id="btnText">Send Message</span>
-  </button>
-  <p class="form-note" id="formNote">Powered by Formspree · Delivered straight to my inbox.</p>
-</form>
-</section>
+
+    <div class="form-group">
+      <label for="f-subject">Subject</label>
+      <input type="text" id="f-subject" name="subject" placeholder="Internship at XYZ Corp — Summer 2026" required/>
+    </div>
+
+    <div class="form-group">
+      <label for="f-msg">Message</label>
+      <textarea id="f-msg" name="message" placeholder="Hi Digambar, I came across your portfolio and would love to discuss..." required></textarea>
+    </div>
+
+    <!-- Honeypot field to reduce spam (Formspree convention) -->
+    <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off"/>
+
+    <button class="form-send-btn" id="formSendBtn" type="submit">
+      <span id="btnIcon">✉️</span> <span id="btnText">Send Message</span>
+    </button>
+  </form>
+</div>
 <footer>
   <div class="footer-text">Designed &amp; built by Digambar Waghmare · AI &amp; Software Developer · Amravati, Maharashtra · 2026</div>
 </footer>
